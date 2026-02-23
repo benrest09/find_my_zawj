@@ -39,7 +39,17 @@ class _HomepageState extends State<Homepage> {
         backgroundColor: Color.fromARGB(255, 250, 238, 246),
       ),
 
-      body: SingleChildScrollView(child: Stack(children: [Container()])),
+      body: SingleChildScrollView(
+        child: Stack(
+          alignment: AlignmentGeometry.topCenter,
+          children: [
+            Text(
+              "ini homepage",
+              style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

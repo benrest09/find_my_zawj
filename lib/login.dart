@@ -1,4 +1,5 @@
 import 'package:find_my_zawj/splash_screen.dart';
+import 'package:find_my_zawj/homepage.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -115,9 +116,11 @@ class _LoginPageState extends State<LoginPage> {
 
               ElevatedButton(
                 onPressed: () {
-                  setState(() {
-                    print('o');
-                  });
+                  Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(builder: (context) => Homepage()),
+                    (route) => false,
+                  );
                 },
                 style: ElevatedButton.styleFrom(
                   minimumSize: Size(double.infinity, 40),

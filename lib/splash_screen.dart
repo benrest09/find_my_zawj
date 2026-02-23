@@ -1,3 +1,4 @@
+import 'package:find_my_zawj/homepage.dart';
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -71,7 +72,12 @@ class SplashScreen extends StatelessWidget {
               const SizedBox(height: 16),
 
               TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => Homepage()),
+                  );
+                },
                 child: const Text(
                   "Isi Nanti",
                   style: TextStyle(fontSize: 14, color: Colors.grey),
