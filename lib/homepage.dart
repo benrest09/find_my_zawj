@@ -43,9 +43,16 @@ class _HomepageState extends State<Homepage> {
         child: Stack(
           alignment: AlignmentGeometry.topCenter,
           children: [
-            Text(
-              "ini homepage",
-              style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "ini homepage",
+                  style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
+                ),
+
+                Image.asset('assets/icons/zawj.png'),
+              ],
             ),
           ],
         ),
